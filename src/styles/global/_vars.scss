@@ -1,0 +1,11 @@
+$background-black : #242625;
+$green: #435953;
+$beich: #BFB6A4;
+$red: #BF0F1E;
+
+@mixin all-centered {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,41 @@
+@import "../global/vars";
+
+.dev-portada{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    color: $beich;
+    span{
+      font-weight: 300;
+      color: $beich;
+    }
+  }
+  p{
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: $beich;
+  }
+  .contactame-btn{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: $background-black;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    width: fit-content;
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: $green;
+  }
+}
+

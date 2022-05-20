@@ -1,0 +1,46 @@
+@import "../global/vars";
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $beich;
+  width: 100%;
+  padding-bottom: 8px;
+  h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: $background-black;
+  }
+  p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 3px;
+    color: $background-black;
+  }
+  a {
+    color: $beich;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    background-color: $background-black;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .more-about-me {
+    overflow: hidden;
+    animation: growing 1s;
+  }
+  @keyframes growing {
+    0% {
+      color: $beich;
+    }
+    100% {
+      color: $background-black;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "vars";
+
+//* Orden de estilos
+// 1. Posicionamiento y Display (position, display, z-index)
+// 2. Dimensiones (width, height, etc)
+// 3. Fuentes (Cualquier configuración de texto)
+// 4. Visuales (Background, animaciones, overflow, filtros, etc)
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  //! Temporal
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Titillium Web";
+}
