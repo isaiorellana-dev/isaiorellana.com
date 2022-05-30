@@ -34,7 +34,7 @@ export const AboutMe = () => {
       </p>
       <Outlet />
       <Link to={open ? "" : "/dev/aboutme"} onClick={handleOpen}>
-        {open ? "Leer menos" : "Leer mas"}
+        {open ? "Leer menos" : "Leer más"}
       </Link>
     </section>
   )
