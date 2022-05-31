@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   background-color: $beich;
+  transition: all 0.5s;
   width: 100%;
   padding-bottom: 8px;
   h2 {
@@ -17,7 +18,7 @@
     font-size: 1.6rem;
     font-weight: 400;
     padding: 3px;
-    max-width: 400px;
+    max-width: 600px;
     color: $background-black;
   }
   a {

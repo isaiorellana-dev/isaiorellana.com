@@ -1,8 +1,9 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import "../styles/components/DevPortada.scss"
+import ContactameDev from "./ContactameDev"
 
 const DevPortada = () => {
+  const [clase, setClase] = React.useState("hide")
   return (
     <section className="dev-portada">
       <div className="dev-portada--content">
@@ -10,9 +11,15 @@ const DevPortada = () => {
           ISAI <span>ORELLANA</span>
         </h1>
         <p>Desarrollador Web Frontend</p>
-        <Link to="" className="contactame-btn">
+        <button
+          onClick={() => {
+            setClase("formulario")
+          }}
+          className={clase === "hide" ? "contactame-btn" : "hide"}
+        >
           Contactame ✉️
-        </Link>
+        </button>
+        <ContactameDev clase={clase} />
       </div>
       <div className="detail-1"></div>
       <div className="detail-2"></div>

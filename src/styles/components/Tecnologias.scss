@@ -10,15 +10,20 @@
     color: $beich;
   }
   .icons-container {
-    margin-top: 10px;
+    margin: 10px 0px 10px 0px;
     display: grid;
     grid-template-columns: repeat(6, 35px);
-    grid-template-rows: repeat(3, 80px);
+    grid-template-rows: repeat(3, 100px);
     justify-items: center;
     align-items: start;
     justify-content: center;
     align-content: center;
     gap: 15px;
+    p {
+      font-size: 1.4rem;
+      color: $beich;
+      text-align: center;
+    }
     :nth-child(1) {
       grid-column: 1/ 3;
       grid-row: 1 / 2;
