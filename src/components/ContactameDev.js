@@ -2,7 +2,7 @@ import React from "react"
 
 const ContactameDev = ({ clase }) => {
   return (
-    <form className={clase} name="contact">
+    <form className={clase} name="contact" method="post">
       <input type="hidden" name="form-name" value="contact" />
       <h2>Envíame un Mensaje</h2>
       <div className="from">
