@@ -1,41 +1,98 @@
 @import "../global/vars";
 
-.dev-portada{
-  width: 100%;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 20px;
-  h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 2.8rem;
-    color: $beich;
-    span{
+.dev-portada {
+  position: relative;
+  .dev-portada--content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 2.8rem;
+      color: $beich;
+      span {
+        font-weight: 300;
+        color: $beich;
+      }
+    }
+    p {
       font-weight: 300;
+      font-size: 1.5rem;
       color: $beich;
     }
-  }
-  p{
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: $beich;
-  }
-  .contactame-btn{
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1.8rem;
-    color: $background-black;
-    border-radius: 8px;
-    text-align: center;
-    text-decoration: none;
-    width: fit-content;
-    height: 30px;
-    padding: 5px;
-    margin-top: 10px;
-    background-color: $green;
+    .contactame-btn {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1.8rem;
+      color: $background-black;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      width: fit-content;
+      height: 30px;
+      padding: 5px;
+      margin-top: 10px;
+      background-color: $green;
+      box-shadow: 5px 9px 4px 0px black;
+    }
   }
 }
-
+@media (min-width: 370px) {
+  .detail-1 {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    width: 35%;
+    height: 100px;
+    border-radius: 8px 0px 0px 8px;
+    background-color: $beich;
+    animation: details-1-move 10s infinite;
+    box-shadow: 5px 9px 4px 0px black;
+  }
+  .detail-2 {
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+    width: 50%;
+    height: 100px;
+    border-radius: 8px 0px 0px 8px;
+    background-color: $green;
+    animation: details-2-move 10s infinite;
+    box-shadow: 5px 9px 4px 0px black;
+  }
+}
+@keyframes details-1-move {
+  0% {
+    width: 35%;
+  }
+  33% {
+    width: 40%;
+  }
+  66% {
+    width: 30%;
+  }
+  100% {
+    width: 35%;
+  }
+}
+@keyframes details-2-move {
+  0% {
+    width: 50%;
+  }
+  33% {
+    width: 52%;
+  }
+  66% {
+    width: 45%;
+  }
+  100% {
+    width: 50%;
+  }
+}
