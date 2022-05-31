@@ -1,10 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "../styles/containers/Portada.scss"
+import useDocumentTitle from "../hooks/useDocumentTitle"
 
 const Portada = () => {
   const dev = "<Desarrollo Web />"
-  const ph = "Fotografia"
+  const ph = "Fotografía"
+  useDocumentTitle("Isai Orellana Dev & Photograper")
 
   return (
     <div className="portada">

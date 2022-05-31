@@ -20,7 +20,7 @@ import Footer from "../components/Header"
 
 const Photographer = () => {
   const { clasesImg, indexImg, setAutoplay, prev, next } = useSlider()
-  useDocumentTitle("Home")
+  useDocumentTitle("PH | Isai Orellana")
   return (
     <div className="main-ph">
       <Footer />

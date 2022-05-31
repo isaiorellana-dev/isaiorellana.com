@@ -32,6 +32,11 @@
     animation: disapear 3s;
   }
   .ph-side {
+    background: linear-gradient(
+      296deg,
+      rgba(191, 15, 30, 1) 0%,
+      rgba(0, 139, 185, 1) 100%
+    );
     height: 50vh;
     @include all-centered;
     h2 {
@@ -40,7 +45,7 @@
     }
     a {
       background-color: red;
-      color: black;
+      color: white;
     }
   }
 }
