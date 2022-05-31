@@ -1,0 +1,109 @@
+@import "mixins";
+.card-contacto {
+  width: 95%;
+  max-width: 350px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 4px var(--blue) solid;
+  background: var(--layout);
+  @include borders;
+
+  p {
+    font-size: 1.4rem;
+
+    a {
+      color: #00ff19;
+      text-decoration: none;
+
+      &:hover {
+        color: #98ffa2;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  label {
+    font-size: 1.4rem;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px 0px 10px 0px;
+
+    input {
+      margin-left: 5px;
+      width: 70%;
+      border-radius: 8px;
+      border: none;
+      padding: 5px;
+      color: gray;
+    }
+  }
+
+  .mensaje {
+    flex-direction: column;
+    align-content: center;
+    margin: 0px 0px 10px 0px;
+
+    label {
+      margin-left: 5px;
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 340px;
+      margin: 5px;
+      padding: 5px;
+      border-radius: 8px;
+      color: gray;
+      border: none;
+    }
+  }
+
+  button {
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: "Titillium Web", sans-serif;
+    width: 76px;
+    border-radius: 8px;
+    border: none;
+    padding: 0px 5px 0px 5px;
+    color: var(--white);
+    background-color: var(--red);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+
+    &:hover {
+      color: var(--blue);
+      transform: scale(1.05);
+      transition: 0.5s;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .card-contacto {
+    max-width: 400px;
+    textarea {
+      max-width: 370px;
+    }
+    h2 {
+      font-size: var(--title-desktop);
+    }
+    p {
+      font-size: var(--p-desktop);
+    }
+    label {
+      font-size: var(--p-desktop);
+    }
+  }
+}

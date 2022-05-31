@@ -1,0 +1,22 @@
+@import "../global/vars";
+.back-dev {
+  position: fixed;
+  z-index: 5;
+  top: 5px;
+  left: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $beich;
+  line-height: 1.8rem;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  width: fit-content;
+  height: 30px;
+  padding: 5px;
+  margin-top: 10px;
+  border: none;
+  background-color: $green;
+  cursor: pointer;
+  box-shadow: 4px 5px 4px 0px black;
+}

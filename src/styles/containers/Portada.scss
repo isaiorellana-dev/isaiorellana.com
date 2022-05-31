@@ -1,43 +1,52 @@
 @import "../global/vars";
-.portada{
-  a{
+.portada {
+  a {
     font-size: 3.2rem;
-    // font-weight: 200;
-    line-height: 50px;
+    font-weight: 600;
+    line-height: 4rem;
     color: $green;
     background-color: $background-black;
     width: 50px;
     height: 50px;
+    margin: 20px;
     text-align: center;
     text-decoration: none;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
+    transform: all 0.5s;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   .dev-side {
-      height: 50vh;
-      background-color: $green;
-      @include all-centered;
-      
-      h2 {
-        font-size: 3.2rem;
-        color: $beich;
-      }
+    height: 50vh;
+    background-color: $green;
+    @include all-centered;
+
+    h2 {
+      font-size: 3.2rem;
+      color: $beich;
     }
-    .animated{
-      animation: disapear 3s;
+  }
+  .animated {
+    animation: disapear 3s;
+  }
+  .ph-side {
+    height: 50vh;
+    @include all-centered;
+    h2 {
+      font-size: 3.2rem;
+      color: white;
     }
-    .ph-side {
-      height: 50vh;
-      @include all-centered;
-      h2 {
-        font-size: 3.2rem;
-        color: red;
-      }
+    a {
+      background-color: red;
+      color: black;
     }
+  }
 }
 
 @keyframes disapear {
-  0%{
+  0% {
     height: 50vh;
   }
   100% {
