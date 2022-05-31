@@ -28,7 +28,7 @@
       position: relative;
       width: 300px;
       height: 400px;
-      margin: 5px;
+      margin: 10px;
       background-color: $green;
       border-radius: 8px;
       overflow: hidden;
@@ -70,3 +70,24 @@
     }
   }
 }
+
+// @media (max-width: 400px) {
+//   .projects {
+//     .project-item {
+//       animation: lightning 2s infinite;
+//       transition: all 1s;
+//     }
+//   }
+// }
+
+// @keyframes lightning {
+//   0% {
+//     box-shadow: 0px 0px 11px 1px white;
+//   }
+//   50% {
+//     box-shadow: 0px 0px 11px 2px white;
+//   }
+//   100% {
+//     box-shadow: 0px 0px 11px 1px white;
+//   }
+// }

@@ -3,6 +3,7 @@ import DevPortada from "../components/DevPortada"
 import { AboutMe } from "../components/AboutMe"
 import Tecnologias from "../components/Tecnologias"
 import Projects from "../components/Projects"
+import DevFooter from "../components/DevFooter"
 
 const Developer = () => {
   return (
@@ -11,6 +12,7 @@ const Developer = () => {
       <AboutMe />
       <Tecnologias />
       <Projects />
+      <DevFooter />
     </>
   )
 }
