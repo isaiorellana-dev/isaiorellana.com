@@ -28,7 +28,7 @@ const Contact = () => {
           <label htmlFor="email">Email:</label>
           <input
             type="email"
-            name="correo"
+            name="email"
             required
             placeholder="Escribe aqui tu correo electronico"
           />
