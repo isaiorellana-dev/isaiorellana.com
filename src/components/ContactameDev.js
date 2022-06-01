@@ -12,6 +12,7 @@ const ContactameDev = ({ clase }) => {
           type="email"
           name="email"
           id="email"
+          required
         ></input>
       </div>
       <div className="message">
@@ -20,6 +21,7 @@ const ContactameDev = ({ clase }) => {
           placeholder="Hola Isaí, me contacto contigo porque..."
           name="message"
           id="message"
+          required
         ></textarea>
       </div>
       <button type="submit">Enviar</button>

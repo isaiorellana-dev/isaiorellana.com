@@ -6,11 +6,11 @@ const ProjectsItem = ({ classname, title, description, repo, site }) => {
       <div className="projects-container-content">
         <h3>{title}</h3>
         <p>{description}</p>
-        <a href={repo} target="_blank">
-          Repositorio
-        </a>
         <a href={site} target="_blank">
           Sitio
+        </a>
+        <a href={repo} target="_blank">
+          Repositorio
         </a>
       </div>
     </div>

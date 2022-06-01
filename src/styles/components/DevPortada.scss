@@ -6,7 +6,8 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    height: 300px;
+    min-height: 300px;
+    padding: 50px 0px 50px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,9 +51,11 @@
     }
     .formulario {
       width: 230px;
-
+      margin-top: 10px;
+      margin-bottom: 10px;
       h2 {
         color: $beich;
+        text-align: left;
       }
       label {
         font-size: 1.6rem;
@@ -73,6 +76,9 @@
         border: solid 3px $green;
         border-radius: 8px;
         padding: 5px;
+      }
+      div {
+        margin: 5px 0px 5px 0px;
       }
       .from {
         display: flex;

@@ -1,5 +1,9 @@
 @import "../global/vars";
 .portada {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   a {
     font-size: 3.2rem;
     font-weight: 600;
@@ -13,6 +17,7 @@
     text-decoration: none;
     border-radius: 0.8rem;
     transform: all 0.5s;
+    animation: opacity 2s;
     &:hover {
       transform: scale(1.1);
     }
@@ -22,14 +27,13 @@
     height: 50vh;
     background-color: $green;
     @include all-centered;
+    animation: disapear 1s;
 
     h2 {
       font-size: 3.2rem;
       color: $beich;
+      animation: opacity 2s;
     }
-  }
-  .animated {
-    animation: disapear 3s;
   }
   .ph-side {
     background: linear-gradient(
@@ -37,24 +41,38 @@
       rgba(191, 15, 30, 1) 0%,
       rgba(0, 139, 185, 1) 100%
     );
+    animation: disapear 1s;
     height: 50vh;
     @include all-centered;
     h2 {
       font-size: 3.2rem;
       color: white;
+      animation: opacity 2s;
     }
     a {
       background-color: red;
       color: white;
+      animation: opacity 2s;
     }
   }
 }
 
 @keyframes disapear {
   0% {
-    height: 50vh;
+    height: 0vh;
   }
   100% {
-    height: 0vh;
+    height: 50vh;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
