@@ -10,7 +10,7 @@ header p {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 3rem;
-  color: var(--black);
+  color: var(--white);
   cursor: pointer;
   &:hover {
     color: var(--white);
@@ -20,7 +20,7 @@ header p {
 
 header p span {
   font-weight: 300;
-  color: var(--black);
+  color: var(--white);
 }
 .link-pagina {
   display: inline-block;
@@ -68,12 +68,12 @@ header button {
   background-color: transparent;
 }
 .menu {
-  background: url(../assets/icons/Menu.svg) center no-repeat;
+  background: url(../../assets/icons/Menu.svg) center no-repeat;
   background-size: 95%;
   transition: background 0.1s, background-color 0s;
 }
 .equis {
-  background: url(../assets/icons/equis.svg) center no-repeat;
+  background: url(../../assets/icons/equis.svg) center no-repeat;
   background-size: 95%;
   background-color: transparent;
   transition: 0.1s;

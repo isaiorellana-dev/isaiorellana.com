@@ -1,5 +1,5 @@
 import React from "react"
-import "../../styles/Vermas.scss"
+import "../../styles/components/Vermas.scss"
 
 const VerMas = (props) => {
   return (

@@ -6,7 +6,7 @@ import maquillaje from "../assets/img/maquillaje.jpg"
 import left from "../assets/icons/left.svg"
 import right from "../assets/icons/right.svg"
 import fire from "../assets/img/fire.jpg"
-import "../styles/Slider.scss"
+import "../styles/components/Slider.scss"
 
 const Slider = (props) => {
   return (

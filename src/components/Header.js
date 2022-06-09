@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import "../styles/Header.scss"
+import "../styles/components/Header.scss"
 
 const Header = () => {
   const [windowSize, setWindowSize] = React.useState(window.innerWidth)

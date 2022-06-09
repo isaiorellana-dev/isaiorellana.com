@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/Services.scss"
+import "../styles/components/Services.scss"
 import VerMas from "./common/VerMas"
 import CardTitle from "./common/CardTitle"
 

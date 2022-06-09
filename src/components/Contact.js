@@ -1,9 +1,9 @@
 import React from "react"
-import "../styles/Contact.scss"
+import "../styles/components/Contact.scss"
 
-const Contact = () => {
+const Contact = ({ clase }) => {
   return (
-    <article className="card-contacto">
+    <article className={clase}>
       <h2>Contacto</h2>
       <p>
         Puedes enviarme un mensaje directo a mi{" "}
@@ -38,7 +38,7 @@ const Contact = () => {
           <textarea
             name="message"
             cols={30}
-            rows={10}
+            rows={5}
             required
             placeholder="Escribe aqui tu mensaje"
             defaultValue={""}

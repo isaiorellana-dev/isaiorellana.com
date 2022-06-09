@@ -1,12 +1,13 @@
-@import "mixins";
+@import "../mixins";
 .card-contacto {
   width: 95%;
   max-width: 350px;
+  height: fit-content;
   padding: 10px;
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 8px;
-  border: 4px var(--blue) solid;
+  // border: 4px var(--blue) solid;
   background: var(--layout);
   @include borders;
 

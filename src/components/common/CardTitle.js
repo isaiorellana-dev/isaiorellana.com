@@ -1,5 +1,5 @@
 import React from "react"
-import "../../styles/CardTitle.scss"
+import "../../styles/components/CardTitle.scss"
 
 const CardTitle = (props) => {
   return (

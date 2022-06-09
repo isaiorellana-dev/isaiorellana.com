@@ -1,8 +1,9 @@
 import React from "react"
-import "../styles/Welcome.scss"
-import myself from "../assets/img/isai 2.png"
+import "../styles/components/Welcome.scss"
+import myself from "../assets/img/IMG_0136-Editar-2.png"
 
 const Welcome = (props) => {
+  const [clase, setClase] = React.useState("hide")
   return (
     <div className="intro-isai">
       <picture>
@@ -12,19 +13,18 @@ const Welcome = (props) => {
           className={props.loading ? "hide" : null}
         />
       </picture>
-      {props.loading && (
-        <div className="loader">
-          <div></div>
-        </div>
-      )}
       <div className="isai-titulo">
         <h2>Isaí Orellana.</h2>
         <p>Fotógrafo Profesional.</p>
+        <button
+          onClick={() => {
+            props.setClase("card-contacto")
+          }}
+          className={props.clase === "hide" ? "contactame-btn" : "hide"}
+        >
+          Contactame
+        </button>
       </div>
-      <p className="description">
-        Bienvenido a mi página web, aquí podrás ver mi trabajo y los detalles de
-        los servicios que ofrezco.
-      </p>
     </div>
   )
 }
