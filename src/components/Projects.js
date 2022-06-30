@@ -8,6 +8,13 @@ const Projects = () => {
       <h2>Proyectos</h2>
       <div className="projects-container">
         <ProjectsItem
+          classname="isapizza"
+          title='IsaPizza'
+          description='Pagina Web para una pizzeria, con la API Pizza and Desserts de rapidapi.com, desarrollado con React JS.'
+          repo="https://github.com/isaiorellana-dev/isapizza"
+          site="https://isapizza.netlify.app/"
+        />
+        <ProjectsItem
           classname="luna"
           title='Sitio Web de "Luna To Go"'
           description='Single Page Application para el servicio de delivery "Luna To Go", desarrollado con React JS.'
